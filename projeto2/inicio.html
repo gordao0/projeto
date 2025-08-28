@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos em São José dos Campos</title>
+<link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+  <header>
+    <h1>Eventos SJC</h1>
+    <nav>
+      <a href="#eventos">Eventos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Descubra os melhores eventos da cidade!</h2>
+  </section>
+
+  <main class="container" id="eventos">
+    <div class="filters">
+      <button onclick="filterEvents('all')">Todos</button>
+      <button onclick="filterEvents('show')">Shows</button>
+      <button onclick="filterEvents('teatro')">Teatro</button>
+      <button onclick="filterEvents('esporte')">Esportes</button>
+    </div>
+
+    <div class="events">
+      <div class="event-card" data-category="show">
+        <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2" alt="Show">
+        <div class="event-info">
+          <h3>Show da Banda X</h3>
+          <p>Data: 25/08/2025</p>
+          <p>Local: Praça Central</p>
+        </div>
+      </div>
+
+      <div class="event-card" data-category="teatro">
+        <img src="https://images.unsplash.com/photo-1506459225024-1428097a7e18" alt="Teatro">
+        <div class="event-info">
+          <h3>Peça Teatral Y</h3>
+          <p>Data: 28/08/2025</p>
+          <p>Local: Teatro Municipal</p>
+        </div>
+      </div>
+
+      <div class="event-card" data-category="esporte">
+        <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" alt="Esporte">
+        <div class="event-info">
+          <h3>Corrida de Rua</h3>
+          <p>Data: 30/08/2025</p>
+          <p>Local: Av. São João</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contato">
+    <p>&copy; 2025 Eventos SJC | Desenvolvido por Você</p>
+    <p>
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a> | 
+      <a href="#">WhatsApp</a>
+    </p>
+  </footer>
+
+  <script>
+    function filterEvents(category) {
+      const cards = document.querySelectorAll('.event-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+ 
+</body>
+</html>
