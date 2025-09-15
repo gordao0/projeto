@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(49, 62, 63);
+    font-family: "Poppins", Arial, sans-serif ;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  img{
+    width: 70px;
+  }
+
+  a{
+    text-decoration: none;
+    color: rgb(20, 20, 159); 
+    justify-content: center;
+    display: flex;
+   
+  }
+
+  .btn {
+   justify-content: center;
+  
+   height: 50px;
+    background-color: #1abc9c;
+    color: white;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+  }
+  .link{
+    margin: 20px;
+    margin-top: 100px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;   /* alinha verticalmente */
+    justify-content: space-between; /* separa texto e input */
+    font-weight: 600;
+  }
+  
+  input {
+    flex: 1;              /* ocupa o espaço restante */
+    margin-left: 10px;    /* dá espaço entre o texto e o campo */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  

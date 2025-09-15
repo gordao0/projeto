@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos em São José dos Campos</title>
+<link rel="stylesheet" href="css/inicio.css">
+<link rel="icon" type="image/png" sizes="16x16"  href="img/logosjc.png">
+</head>
+<body>
+  <header>
+    <h1>Eventos SJC</h1>
+    <nav>
+      <a  href="#contato">Contato</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="cadastro.html">logar</a>
+    </nav>
+  </header>
+  <section style="color: white;" class="hero">
+    <h2>SEJA BEM VINDO AO SITE DE NOTICIAS DE SAO JOSE DOS CAMPOS!</h2>
+  </section>
+          
+  <section class="hero1">
+    <h1>CONHECA MELHOR SAO JOSE DOS CAMPOS</h1>
+  </section>
+
+         <div class="video-text-container">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/oqFue5v0_Nc?si=qB-hio7rld4xuS9Y"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+
+  <p class="descricao">
+    A história de São José dos Campos começou no século XVI, com a fundação de um aldeamento jesuíta. Em 1767,<br>
+    esse núcleo deu origem a uma vila, que foi elevada à categoria de cidade em 1871.<br>
+    Durante o século XIX, a vila destacou-se como um polo de saúde, graças ao seu clima considerado benéfico.<br>
+    Já no século XX, a cidade passou por uma grande transformação, tornando-se um centro industrial e tecnológico,<br>
+    impulsionado pela construção da Via Dutra e pela criação de instituições como o CTA (Centro Técnico Aeroespacial),
+    o DCTA (Departamento de Ciência e Tecnologia Aeroespacial), a Embraer e diversas outras indústrias de ponta.
+  </p>
+</div>
+
+
+<section class="hero1">
+  <h1 style="margin-top: 70px; ">LUGARES QUE VOCE PRECISA CONHECER</h1>
+</section>
+
+              <main class="container" id="eventos">
+                <div class="filters">
+                  <button onclick="filterEvents('all')">Todos</button>
+                  <button onclick="filterEvents('show')">PARQUES</button>
+                  <button onclick="filterEvents('teatro')">PRACAS</button>
+                  <button onclick="filterEvents('esporte')">shopping</button>
+                </div>
+                <div class="events">
+                  <div onclick="filterEvents" class="event-card" data-category="show">
+                    <img src="https://static.wixstatic.com/media/24a577_7e2d8527bcf2412485863961fba82a7e~mv2.jpg/v1/fill/w_701,h_491,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/24a577_7e2d8527bcf2412485863961fba82a7e~mv2.jpg" alt="Show">
+                    <div class="event-info">
+                      <h3>thermas do vale</h3>
+                      <p>Local: Av. Linneu de Moura, 205
+                        Jardim das Colinas - 12244-380
+                        São José dos Campos / SP</p>
+                        <div  class="btn">
+                          <a href="https://www.thermasdovale.com.br/"target="_blank" style="color: aliceblue;"> <h3>🌊 Thermas do Vale</h3>
+                          </a>
+                        </div>
+
+                    </div>
+                  </div>
+                  <div class="event-card reveal" data-reveal="up" data-category="teatro">
+                    <img src="https://img1.wsimg.com/isteam/ip/0a4fe9b5-6b8b-434f-b68e-cde31f2706b3/1ribverm.png" alt="Praça Ribeirão Vermelho">
+                    <div class="event-info">
+                      <h3>Praça Ribeirão Vermelho</h3>
+                      <p>
+                        <strong>Portaria A:</strong> Av. Maria de Lourdes Friggi, 1000 - Urbanova <br>
+                        <div class="btn">
+                          <a href="https://www.google.com.br/maps/place/Parque+Ribeir%C3%A3o+Vermelho/@-23.1971638,-45.9601925,17z/data=!4m6!3m5!1s0x94cc369ff4cbc91b:0x960fed8f0ac4334d!8m2!3d-23.1986381!4d-45.9608324!16s%2Fg%2F11bzx1fpb5?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"target="_blank" style="color: aliceblue;"> <h3>Praça Ribeirão Vermelho</h3></a>
+                        </div>
+                        </a>
+                      </p>
+                      <p>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  
+            
+                  <div class="event-card" data-category="esporte">
+                    <img src="https://sjc.com.br/wp-content/uploads/2024/09/19042016-_MG_7378.jpg" alt="Esporte">
+                    <div class="event-info">
+                      <h3>centervale</h3>
+                      <p>Av. Deputado Benedito Matarazzo, 9403
+                        Jardim Oswaldo Cruz</p>
+                        <div class="btn">
+                          <a  href="https://www.google.com/maps/place/Centervale+Shopping/@-23.1997393,-45.8835746,17z/data=!3m1!4b1!4m5!3m4!1s0x94cc4bb95ea9137b:0x1d9651692c6c1ff5!8m2!3d-23.1997442!4d-45.8813859"target="_blank" style="color: aliceblue;"><h3> centervale </h3>  </a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </main>
+
+              <main>
+                <div  class="container-slide">
+                  <h1 style="margin-top: 70px; display: flex; justify-content: center;" >GRANDES EMPRESAS DE SãO JOSE DOS CAMPOS</h1>
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <div class="slides">
+                      <img src="https://i0.wp.com/forcaaerea.com.br/wp-content/uploads/2024/08/NOVA-ENTRADA-EMBRAER-OZIRES-SILVA-4.jpg?resize=1024%2C683&ssl=1" class="slide">
+                      <img src="https://sampi.net.br/dir-arquivo-imagem/2020/01/c9ce518c2c8608b062be089f1811fdc6.jpg" class="slide" >
+                      <img src="https://www.012news.com.br/wp-content/uploads/2024/08/GettyImages-1238688616.webp" class="slide" >
+                      <img src="https://portalaquivale.com.br/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-15-at-10.03.55-1024x683.jpeg" class="slide" >
+                    </div>
+                    <div style="justify-content: center; display: flex;" class="btn-slide">
+                      <label for="slide1"></label>
+                      <label for="slide2"></label>
+                      <label for="slide3"></label>
+                      <label for="slide4"></label>
+                    </div>
+                    <div class="escrita">
+                      <p class="legenda1">A Embraer é uma das líderes mundiais da indústria aeroespacial, atuando nos segmentos de Aviação Comercial, Jatos Executivos, Defesa & Segurança e Serviços & Suporte.</p>
+                      <p class="legenda2">A General Motors Company (GM) é uma empresa multinacional estadunidense de fabricação automotiva com sede em Detroit, Michigan, Estados Unidos. É a maior fabricante de automóveis com sede nos EUA e uma das maiores indústrias automobilísticas do mundo.</p>
+                      <p class="legenda3">A Ericsson é uma empresa de tecnologia especializada em equipamentos de telecomunicações.</p>
+                      <p class="legenda4">Johnson & Johnson é uma empresa americana fundada em 1886, especializada na produção de farmacêuticos, utensílios médicos e produtos pessoais de higiene</p>
+                    </div>
+                </div>
+              </main>
+              
+  <footer id="contato">
+    <p>&copy; 2025 Eventos SJC | Desenvolvido por Você</p>
+    <p>
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a> | 
+      <a href="#">WhatsApp</a>
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117359.22358233381!2d-45.945413575317964!3d-23.18932700375446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bb3858cc2e7%3A0xba25a33168f8c1!2zU8OjbyBKb3PDqSBkb3MgQ2FtcG9zLCBTUA!5e0!3m2!1spt-BR!2sbr!4v1757108789106!5m2!1spt-BR!2sbr" width="600" height="200"  style="border:0;  margin: 10px; border-radius: 10px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </footer>
+  <script>
+    function filterEvents(category) {
+      const cards = document.querySelectorAll('.event-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+    
+  </script>
+</body>
+</html>

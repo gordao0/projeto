@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="icon" type="image/png" sizes="16x16"  href="img/logosjc.png">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="img/do-utilizador.png" alt="Ícone de usuário">
+      <h1>Já tem cadastro?</h1> 
+      <form class="logar" onsubmit="event.preventDefault; alert(` login feito com sucesso`) " action="interfaceusu.html" >
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+        <label for="password">Senha</label>
+        <input type="password" id="password" placeholder="Digite sua senha" required>
+        <button type="submit" class="btn">Entrar</button>
+      </form>
+      
+      <div class="link">
+        <a href="cadastrousu.html">Criar conta</a>
+        <a href="esquecisenha.html">Esqueci minha senha</a>
+        <a href="inicio.html">Voltar para o início</a>
+      </div>
+    </div>
+  </header>
+</body>
+</html>

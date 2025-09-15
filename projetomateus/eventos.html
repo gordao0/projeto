@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos em São José dos Campos</title>
+<link rel="stylesheet" href="css/inicio.css">
+<link rel="icon" type="image/png" sizes="16x16"  href="img/logosjc.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <header>
+    <h1>Eventos SJC</h1>
+    <nav>
+      <a href="inicio.html">inicio</a>
+      <a href="#contato">Contato</a>
+      <a href="cadastro.html">logar</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Descubra os melhores eventos da cidade!</h2>
+  </section>
+
+  <main class="container" id="eventos">
+    <div class="filters">
+      <button onclick="filterEvents('all')">Todos</button>
+      <button onclick="filterEvents('show')">Shows</button>
+      <button onclick="filterEvents('teatro')">Teatro</button>
+      <button onclick="filterEvents('esporte')">Esportes</button>
+    </div>
+
+    <div class="events">
+      <div class="event-card" data-category="show">
+        <img src="https://www.conciergerie.com.br/wp-content/uploads/2024/08/vale-rodeio-show-sao-jose-dos-campos-2024.webp" alt="Show">
+        <div class="event-info">
+          <h3>🔥VALE RODEIO SHOW🤠</h3>
+          <p>Dias 20 e 21 de Setembro</p>
+          <p>Arena Vale Fest</p>
+          <div  class="btn">
+            <a href="https://www.valerodeioshow.com.br/"target="_blank" style="color: aliceblue;"> <h3>VER MAIS</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card" data-category="teatro">
+        <img src="https://colinasshopping.com.br/explorer//teatro/teatro_thumb_1752164524.jpg" alt="Teatro">
+        <div class="event-info">
+          <h3>A Série B</h3>
+          <p> 06 de Setembro</p>
+          <p>Teatro Colinas</p>
+          <div  class="btn">
+            <a href="https://www.teatrocolinas.com.br/detalhe/a-serie-b--"target="_blank" style="color: aliceblue;"> <h3>VER MAIS</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-card" data-category="esporte">
+        <img src="https://viralizabh.com.br/wp-content/uploads/2024/04/Circuito-LIVE-RUN-XP-2024-tem-todas-etapas-com-inscricoes-esgotadas-ate-maio.jpg" alt="Esporte">
+        <div class="event-info">
+          <h3>Corrida de Rua</h3>
+          <p>Data: 14/09/2025</p>
+          <p>Paço Municipal</p>
+          <div  class="btn">
+            <a href="https://esportividade.com.br/evento/etapa-de-sao-jose-dos-campos-live-run-xp-2025/"target="_blank" style="color: aliceblue;"> <h3>VER MAIS</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a class="pdf" href="file:///C:/Users/T-GAMER/Downloads/Calend%C3%A1rio%20Tur%C3%ADstico%20de%20Eventos%202025.docx.pdf" download="./Calendário Turístico de Eventos 2025.docx.pdf">VER CALENDARIO COMPLETO</a>
+    </div>
+
+    
+  </main>
+
+  <footer id="contato">
+    <p>&copy; 2025 Eventos SJC | Desenvolvido por Você</p>
+    <p>
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a> | 
+      <a href="#">WhatsApp</a>
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117359.22358233381!2d-45.945413575317964!3d-23.18932700375446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bb3858cc2e7%3A0xba25a33168f8c1!2zU8OjbyBKb3PDqSBkb3MgQ2FtcG9zLCBTUA!5e0!3m2!1spt-BR!2sbr!4v1757108789106!5m2!1spt-BR!2sbr" width="600" height="200"  style="border:0;  margin: 10px; border-radius: 10px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </footer>
+
+  <script>
+    function filterEvents(category) {
+      const cards = document.querySelectorAll('.event-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+ 
+</body>
+</html>

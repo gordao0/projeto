@@ -1,0 +1,39 @@
+
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cadastro usario</title>
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="icon" type="image/png" sizes="16x16"  href="img/logosjc.png">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="img/do-utilizador.png" alt="Ícone de usuário">
+      <h1>cadastro usuario</h1> 
+      <form target="_blank" class="logar" onsubmit=" alert(`conta criada com sucesso!`)" action="interfaceusu.html" >
+        <label for="name">nome</label>
+        <input type="name" id="name" placeholder="Digite nome" required>
+        <label for="data">data de nascimento</label>
+        <input type="date" id="data" placeholder="data de nascimento" required>
+        <label for="e-mail">e-mail</label>
+        <input type="email" id="e-mail" placeholder="e-mail" required>
+        <label for="password">senha</label>
+        <input type="password" id="password" placeholder="senha" required>
+        <label for="password">confirme sua senha</label>
+        <input type="password" id="password" placeholder="confirme sua senha" required>
+        <label for="file">Escolha sua foto de perfil:*opcional</label>
+        <input type="file" form="image">
+        <button type="submit" class="btn" >Entrar</button>
+      </form>
+      
+      <div class="link">
+        <a href="cadastro.html">Ja Tenho Conta</a>
+        <a href="inicio.html">Voltar para o início</a>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
